@@ -1,0 +1,112 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MODEL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      },
+      "MODEL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MODEL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MODEL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DAL/1.0.0": {
+      "type": "project",
+      "path": "../DAL/DAL.csproj",
+      "msbuildProject": "../DAL/DAL.csproj"
+    },
+    "MODEL/1.0.0": {
+      "type": "project",
+      "path": "../MODEL/MODEL.csproj",
+      "msbuildProject": "../MODEL/MODEL.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "DAL >= 1.0.0",
+      "MODEL >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ARIBILGI\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\ARIBILGI\\Desktop\\uygulama\\NKatmanlı\\BLL\\BLL.csproj",
+      "projectName": "BLL",
+      "projectPath": "C:\\Users\\ARIBILGI\\Desktop\\uygulama\\NKatmanlı\\BLL\\BLL.csproj",
+      "packagesPath": "C:\\Users\\ARIBILGI\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ARIBILGI\\Desktop\\uygulama\\NKatmanlı\\BLL\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\ARIBILGI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\ARIBILGI\\Desktop\\uygulama\\NKatmanlı\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\ARIBILGI\\Desktop\\uygulama\\NKatmanlı\\DAL\\DAL.csproj"
+            },
+            "C:\\Users\\ARIBILGI\\Desktop\\uygulama\\NKatmanlı\\MODEL\\MODEL.csproj": {
+              "projectPath": "C:\\Users\\ARIBILGI\\Desktop\\uygulama\\NKatmanlı\\MODEL\\MODEL.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
